@@ -7,15 +7,15 @@ function render(list) {
   main.innerHTML = '';
 
   list.forEach((genre) => {
-    const card = document.createElement('div');
+    const card = document.createElement('a');
     card.className = 'card';
+
     card.textContent = genre;
+    card.href = `detail.html?title=${encodeURIComponent(genre)}`;
+
     main.appendChild(card);
   });
 }
-
-// 👉 처음은 전체 보여줘야 정상 UX
-// render(genres);
 
 searchBar.addEventListener('input', function () {
   const keyword = searchBar.value.trim();
