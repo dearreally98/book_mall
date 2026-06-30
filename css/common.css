@@ -136,7 +136,7 @@ body {
 
 header {
   text-align: center;
-  padding: 35px 0 40px;
+  padding: 20px 0;
   background: #f6f5f2;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
   letter-spacing: 1px;
@@ -160,7 +160,8 @@ a {
 
 nav {
   background: #f6f5f2;
-  padding: 15px;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
 }
 
 nav ul {
@@ -195,6 +196,6 @@ footer {
   gap: 10px;
   background: #f6f5f2;
   border-top: 1px solid #e5e5e5;
-  padding: 20px 20px;
+  padding: 10px 0;
   color: rgb(136, 136, 136);
 }
