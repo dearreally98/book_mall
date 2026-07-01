@@ -171,6 +171,12 @@ nav ul {
   align-items: center;
 }
 
+.nav-qna {
+  position: relative;
+  bottom: 2px;
+  left: 7px;
+}
+
 #bookRank {
   min-width: 120px;
   text-align: center;
