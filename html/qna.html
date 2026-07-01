@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/qna.css">
+</head>
+<body>
+    <header>
+      <a href="index.html">
+        <h1 class="logo">Book Mall</h1>
+      </a>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">장바구니</a></li>
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">마이페이지</a></li>
+        <li id="bookRank">1위: 데미안</li>
+      </ul>
+    </nav>
+    
+    <main id="main">
+        <div class="qna">
+            <div class="chatBox"></div>
+
+            <div class="chat-input">
+                <input type="text" id="question" placeholder="무엇이 궁금하신가요?">
+                <button type="button" id="send">전송</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+      <p class="footer-logo">Book Mall</p>
+      <p class="footer-desc">책을 고르는 조용한 방법</p>
+      <p class="footer-copyright">© 2026 Book Mall</p>
+    </footer>
+  </body>
+  <script src="../js/common.js"></script>
+  <script src="../js/qna.js"></script>
+</body>
+</html>
