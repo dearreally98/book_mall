@@ -1,0 +1,101 @@
+#main{
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+#bookImg{
+    margin: 100px 100px auto 200px;
+    
+}
+
+img{
+    width: 300px;
+    border: 2px solid #c0baba;
+}
+
+#bookInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 100px;
+    width: 400px;
+    height: 440px;
+    text-align: left;
+    border: 5px double #ddd;
+    border-radius: 15px;
+    font-size: 20px;
+    color: #554e4e;
+}
+
+#bookHead{
+    margin-bottom: 20px;
+    padding: 25px;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    border-bottom: 5px double #ddd;
+}
+
+.bookInfoDetail{
+    padding-left: 50px;
+}
+
+#starRating{
+    padding-top: 10px;
+    font-size: 25px;
+    color: rgb(214, 49, 76);
+    text-align: center;
+}
+
+#sideBox{
+    margin-top: 70px;
+    margin-left: 50px;
+    width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#rental{
+    padding: 20px;
+    border: 5px double #ddd;
+    border-radius: 15px;
+    text-align: left;
+}
+
+#rental label{
+    display: block;
+}
+
+#rentalHead{
+    font-size: 25px;
+    text-align: center;
+}
+
+#delivery{
+    padding: 30px;
+    border: 5px double #ddd;
+    border-radius: 15px;
+}
+
+#deliveryHead{
+    font-size: 25px;
+    text-align: center;
+}
+
+#deliveryResult{
+    margin-top: 20px;
+}
+
+#buttons{
+    display: flex;
+    margin-left: 65px;
+    gap: 30px;
+}
+
+button{
+    text-align: center;
+    cursor: pointer;
+}
