@@ -17,8 +17,8 @@
     <nav>
       <ul>
         <li><a href="../html/basket.html">장바구니</a></li>
-        <li><a href="#">로그인</a></li>
         <li><a href="#">마이페이지</a></li>
+        <li><a class="nav-qna" href="./qna.html">Q&A</a></li>
         <li id="bookRank">1위: 데미안</li>
       </ul>
     </nav>
@@ -58,7 +58,7 @@
 
               <button class="plus-btn">+</button>
             </div>
-            <p id="bookCount"></p>
+            <p id="bookCountPrice" countPrice="0">상품 합계 : 0원</p>
           </div>
         </section>
 
@@ -81,7 +81,7 @@
         </section>
         <!-- 금액 section -->
         <section class="basket-summary">
-          <p>총 금액 : <span id="total-price">0원</span></p>
+          <p>총 금액 : <span id="total-price">0</span>원</p>
           <button type="button" id="">주문하기</button>
         </section>
       </section>
