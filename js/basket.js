@@ -1,23 +1,22 @@
-const minus_btn = document.querySelectorAll(".minus-btn");
-const plus_btn = document.querySelectorAll(".plus-btn");
-const quantity = document.querySelector(".quantity");
 const basketItems = document.querySelectorAll(".basket-item");
 
-basketItems.forEach(function (item) {});
+basketItems.forEach(function (item) {
+  const minusBtn = item.querySelector(".minus-btn");
+  const plusBtn = item.querySelector(".plus-btn");
+  const quantity = item.querySelector(".quantity");
 
-minus_btn.addEventListener("click", function () {
-  let count = Number(quantity.textContent);
+  plusBtn.addEventListener("click", function () {
+    let count = Number(quantity.textContent);
+    count++;
 
-  if (count > 1) {
-    count--;
     quantity.textContent = count;
-  }
-});
+  });
 
-plus_btn.addEventListener("click", function () {
-  let count = Number(quantity.textContent);
-
-  count++;
-
-  quantity.textContent = count;
+  minusBtn.addEventListener("click", function () {
+    let count = Number(quantity.textContent);
+    if (count > 1) {
+      count--;
+      quantity.textContent = count;
+    }
+  });
 });

@@ -23,58 +23,67 @@
       </ul>
     </nav>
     <main class="basket-container">
-      <section class="basket-item">
-        <div class="book-image">이미지</div>
+      <!-- 상품 정렬 -->
+      <section class="basket-list">
+        <section class="basket-item">
+          <div class="book-image">이미지</div>
 
-        <div class="book-info">
-          <p>책이름1</p>
-          <p>저자 : 아무개</p>
-          <p>출간일 : 0000년 00월 00일</p>
-          <p>가격 : 00000</p>
-          <div class="quantity-box">
-            <button class="minus-btn">-</button>
+          <div class="book-info">
+            <p>책이름1</p>
+            <p>저자 : 아무개</p>
+            <p>출간일 : 0000년 00월 00일</p>
+            <p class="price" date-price="21000">가격 : 21,000원</p>
+            <div class="quantity-box">
+              <button class="minus-btn">-</button>
 
-            <span class="quantity">1</span>
+              <span class="quantity">1</span>
 
-            <button class="plus-btn">+</button>
+              <button class="plus-btn">+</button>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="basket-item">
-        <div class="book-image">이미지</div>
+        <section class="basket-item">
+          <div class="book-image">이미지</div>
 
-        <div class="book-info">
-          <p>책이름2</p>
-          <p>저자 : 아무개</p>
-          <p>출간일 : 0000년 00월 00일</p>
-          <p>가격 : 00000</p>
-          <div class="quantity-box">
-            <button class="minus-btn">-</button>
+          <div class="book-info">
+            <p>책이름2</p>
+            <p>저자 : 아무개</p>
+            <p>출간일 : 0000년 00월 00일</p>
+            <p class="price" date-price="17000">가격 : 17,000원</p>
+            <div class="quantity-box">
+              <button class="minus-btn">-</button>
 
-            <span class="quantity">1</span>
+              <span class="quantity">1</span>
 
-            <button class="plus-btn">+</button>
+              <button class="plus-btn">+</button>
+            </div>
+            <p id="bookCount"></p>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="basket-item">
-        <div class="book-image">이미지</div>
+        <section class="basket-item">
+          <div class="book-image">이미지</div>
 
-        <div class="book-info">
-          <p>책이름3</p>
-          <p>저자 : 아무개</p>
-          <p>출간일 : 0000년 00월 00일</p>
-          <p>가격 : 00000</p>
-          <div class="quantity-box">
-            <button class="minus-btn">-</button>
+          <div class="book-info">
+            <p>책이름3</p>
+            <p>저자 : 아무개</p>
+            <p>출간일 : 0000년 00월 00일</p>
+            <p class="price" date-price="15000">가격 : 15,000원</p>
+            <div class="quantity-box">
+              <button class="minus-btn">-</button>
 
-            <span class="quantity">1</span>
+              <span class="quantity">1</span>
 
-            <button class="plus-btn">+</button>
+              <button class="plus-btn">+</button>
+            </div>
           </div>
-        </div>
+        </section>
+        <!-- 금액 section -->
+        <section class="basket-summary">
+          <p>총 금액 : <span id="total-price">0원</span></p>
+          <button type="button" id="">주문하기</button>
+        </section>
       </section>
     </main>
     <footer>

@@ -1,11 +1,11 @@
 /* main 영역 */
-
 .basket-container {
   width: 90%;
   max-width: 1200px;
   margin: 40px auto;
 }
 
+/* 상품 정렬 */
 .basket-item {
   display: flex;
 
@@ -16,6 +16,7 @@
   margin-bottom: 35px;
 }
 
+/* 이미지 */
 .book-image {
   width: 340px;
 
@@ -29,6 +30,7 @@
   color: #888;
 }
 
+/* 상품 정보 */
 .book-info {
   flex: 1;
 
@@ -37,4 +39,10 @@
 
   padding: 40px;
   gap: 15px;
+}
+
+/* 금액 */
+.basket-summary {
+  margin-top: 40px;
+  text-align: right;
 }
