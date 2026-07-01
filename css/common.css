@@ -199,3 +199,15 @@ footer {
   padding: 10px 0;
   color: rgb(136, 136, 136);
 }
+
+.footer-logo {
+  font-size: 17px;
+}
+
+.footer-desc {
+  font-size: 13px;
+}
+
+.footer-copyright {
+  font-size: 12px;
+}
