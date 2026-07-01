@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>도서 쇼핑몰</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/bookdetail.css">
+    <script src="../js/bookdetail.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <h1 class="logo">Book Mall</h1>
+      </a>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">장바구니</a></li>
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">마이페이지</a></li>
+        <li id="bookRank">1위: 데미안</li>
+      </ul>
+    </nav>
+    <main id="main">
+        <div id="bookImg">
+            <img src="../img/fantasy_book.jpg" alt="눈물을 마시는 새">
+        </div>
+
+        <div id="bookInfo">
+            <h2 id="bookHead">눈물을 마시는 새</h2>
+            <p><span class="bookInfoDetail">작가 :</span>&nbsp;&nbsp;&nbsp;이영도</p>
+            <p><span class="bookInfoDetail">출판사 :</span>&nbsp;&nbsp;&nbsp;황금가지</p>
+            <p><span class="bookInfoDetail">출판일 :</span>&nbsp;&nbsp;&nbsp;2003년 1월</p>
+            <p><span class="bookInfoDetail">가격 :</span>&nbsp;&nbsp;&nbsp;17,000원</span></p>
+            <p><span class="bookInfoDetail">배송료:</span>&nbsp;&nbsp;&nbsp;무료</p>
+            <p id="starRating">★★★★★ (9.5)</p>
+        </div>
+        <div id="sideBox">
+            <div id="rental">
+                <p id="rentalHead">도서 대여 서비스</p><br>
+                <label>
+                    <input type="radio" name="rental" id="seven" checked>
+                    3일 대여&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;5,000원
+                </label><br>
+                <label>
+                    <input type="radio" name="rental" id="fifteen">
+                    15일 대여&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;9,000원
+                </label><br>
+                <label>
+                    <input type="radio" name="rental" id="thirty">
+                    30일 대여&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;13,000원
+                </label><br>
+            </div>
+            <div id="delivery">
+                <p id="deliveryHead">배송 안내</p><br>
+                <label>주문 날짜&nbsp;&nbsp;&nbsp;</label>
+                <input type="date" id="orderDate"><br><br>
+                <label>
+                    <input type="radio" name="delivery" value="1" checked>
+                    새벽 배송 (+1일)
+                </label>
+                <label>
+                    <input type="radio" name="delivery" value="3">
+                    일반 배송 (+3일)
+                </label>
+                <p id="deliveryResult">도착 예정일 :</p>
+            </div>
+            <div id="buttons">
+                <button type="button" id="basket">장바구니 넣기</button>
+                <button type="button" id="order">주문하기</button>
+                <button type="button" id="rentalOrder">대여하기</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+      <p class="footer-logo">Book Mall</p>
+      <p class="footer-desc">책을 고르는 조용한 방법</p>
+      <p class="footer-copyright">© 2026 Book Mall</p>
+    </footer>
+  </body>
+  <script src="../js/common.js"></script>
+</html>
