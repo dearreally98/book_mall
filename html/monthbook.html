@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>도서 쇼핑몰</title>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/monthbook.css"/>
+    <script src="../js/monthbook.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <h1 class="logo">Book Mall</h1>
+      </a>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="../html/basket.html">장바구니</a></li>
+        <li><a href="#">마이페이지</a></li>
+        <li><a class="nav-qna" href="./qna.html">Q&A</a></li>
+        <li id="bookRank">1위: 데미안</li>
+      </ul>
+    </nav>
+    <main id="main">
+        <div class="cardWrap">
+        <div id="bookCard1" class="card">
+            <div class="cardInner">
+                <div class="cardFront">
+                    <img id="bookImg1" src="../img/development_book.jpg" alt="책 표지">
+                </div>
+
+                <div class="cardBack">
+                    <h3 id="bookTitle1"></h3><br>
+                    <p id="bookText1"></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="bookCard2" class="card">
+            <div class="cardInner">
+                <div class="cardFront">
+                    <img id="bookImg2" src="../img/development_book.jpg" alt="책 표지">
+                </div>
+
+                <div class="cardBack">
+                    <h3 id="bookTitle2"></h3><br>
+                    <p id="bookText2"></p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <button id="randomBtn"> 도서 랜덤 추천</button>
+    </main>
+    <footer>
+      <p class="footer-logo">Book Mall</p>
+      <p class="footer-desc">책을 고르는 조용한 방법</p>
+      <p class="footer-copyright">© 2026 Book Mall</p>
+    </footer>
+  </body>
+  <script src="../js/common.js"></script>
+</html>
