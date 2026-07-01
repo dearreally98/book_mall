@@ -1,3 +1,5 @@
+
+
 .search {
   display: flex;
   justify-content: center;
@@ -9,7 +11,7 @@
 .search input {
   padding: 10px;
   width: 300px;
-  font-size: 15px;
+  font-size: 16px;
   border: none;
   border-bottom: 1px solid rgb(177, 177, 177);
   background-color: transparent;
@@ -17,23 +19,48 @@
 }
 
 #main {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  gap: 20px;
   justify-content: center;
-  align-items: center;
-  flex-direction: column;
   padding: 20px;
-  margin: auto;
 }
 
 .card {
-  display: block;
   width: 200px;
-  height: 200px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  text-align: center;
-  background: white;
-  border-radius: 6px;
+  height: 220px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  border: 1px solid #eee;
+  border-radius: 15px;
+
   text-decoration: none;
-  color: black;
+  color: #333;
+  background: white;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+  font-size: 18px;
+  margin: 0;
+  text-align: center;
+}
+
+.card p {
+  font-size: 14px;
+  color: #777;
+  margin: 0;
 }
