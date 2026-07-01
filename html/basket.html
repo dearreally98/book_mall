@@ -23,16 +23,24 @@
       </ul>
     </nav>
     <main class="basket-container">
-      <!-- 상품 정렬 -->
+      <!-- 상품 목록 -->
       <section class="basket-list">
+        <!-- 상품 1 -->
         <section class="basket-item">
-          <div class="book-image">이미지</div>
+          <div class="book-image">
+            <img src="../img/demian.jpg" alt="데미안" />
+          </div>
 
           <div class="book-info">
-            <p>책이름1</p>
-            <p>저자 : 아무개</p>
-            <p>출간일 : 0000년 00월 00일</p>
-            <p class="price" date-price="21000">가격 : 21,000원</p>
+            <p>데미안</p>
+            <p>저자 : 헤르만 해세</p>
+            <p>출간일 : 1919년</p>
+            <p>
+              설명: 자아를 찾아 성장하는 한 소년의 이야기를 담은 세계적인 고전.
+            </p>
+
+            <p class="price" data-price="21000">가격 : 21,000원</p>
+
             <div class="quantity-box">
               <button class="minus-btn">-</button>
 
@@ -40,17 +48,27 @@
 
               <button class="plus-btn">+</button>
             </div>
+
+            <p class="book-count-price">상품 합계 : 21,000원</p>
           </div>
         </section>
 
+        <!-- 상품 2 -->
         <section class="basket-item">
-          <div class="book-image">이미지</div>
+          <div class="book-image">
+            <img src="../img/almond.jpg" alt="아몬드" />
+          </div>
 
           <div class="book-info">
-            <p>책이름2</p>
-            <p>저자 : 아무개</p>
-            <p>출간일 : 0000년 00월 00일</p>
-            <p class="price" date-price="17000">가격 : 17,000원</p>
+            <p>아몬드</p>
+            <p>저자 : 손원평</p>
+            <p>출간일 : 2017 03월 31일</p>
+            <p>
+              감정을 느끼기 어려운 소년이 세상과 사람을 이해해 가는 성장 소설.
+            </p>
+
+            <p class="price" data-price="17000">가격 : 17,000원</p>
+
             <div class="quantity-box">
               <button class="minus-btn">-</button>
 
@@ -58,18 +76,28 @@
 
               <button class="plus-btn">+</button>
             </div>
-            <p id="bookCountPrice" countPrice="0">상품 합계 : 0원</p>
+
+            <p class="book-count-price">상품 합계 : 17,000원</p>
           </div>
         </section>
 
+        <!-- 상품 3 -->
         <section class="basket-item">
-          <div class="book-image">이미지</div>
+          <div class="book-image">
+            <img src="../img/convenience.jpg" alt="불편한 편의점" />
+          </div>
 
           <div class="book-info">
-            <p>책이름3</p>
-            <p>저자 : 아무개</p>
-            <p>출간일 : 0000년 00월 00일</p>
-            <p class="price" date-price="15000">가격 : 15,000원</p>
+            <p>불편한 편의점</p>
+            <p>저자 : 김호연</p>
+            <p>출간일 : 2021 04월 20일</p>
+            <p>
+              설명: 편의점을 배경으로 다양한 사람들의 이야기를 따뜻하게 그린
+              소설.
+            </p>
+
+            <p class="price" data-price="15000">가격 : 15,000원</p>
+
             <div class="quantity-box">
               <button class="minus-btn">-</button>
 
@@ -77,12 +105,16 @@
 
               <button class="plus-btn">+</button>
             </div>
+
+            <p class="book-count-price">상품 합계 : 15,000원</p>
           </div>
         </section>
-        <!-- 금액 section -->
+
+        <!-- 총 금액 -->
         <section class="basket-summary">
-          <p>총 금액 : <span id="total-price">0</span>원</p>
-          <button type="button" id="">주문하기</button>
+          <p>총 금액 : <span id="total-price">53,000</span>원</p>
+
+          <button type="button">주문하기</button>
         </section>
       </section>
     </main>
