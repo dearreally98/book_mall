@@ -9,13 +9,14 @@ const phoneRegExp = /^010-\d{4}-\d{4}$/;
 const editBtn = document.querySelector("#editBtn");
 const inputs = document.querySelectorAll(".edit-input");
 
+const nameInput = document.querySelector("#name");
+const emailInput = document.querySelector("#email");
+const phoneInput = document.querySelector("#phone");
+
 let isEdit = false;
 
 editBtn.addEventListener("click", function () {
-  const name = document.querySelector("#name");
-  const email = document.querySelector("#email");
-  const phone = document.querySelector("#phone");
-
+  // 수정 모드
   if (!isEdit) {
     inputs.forEach(function (input) {
       input.disabled = false;
@@ -23,17 +24,51 @@ editBtn.addEventListener("click", function () {
 
     editBtn.textContent = "저장";
     isEdit = true;
-  } else {
-    inputs.forEach(function (input) {
-      input.disabled = true;
-    });
 
-    editBtn.textContent = "수정하기";
-    isEdit = false;
-  }
-
-  if (!nameRegExp.test(name.value)) {
-    name.nextElementSibling.textContent = "올바른 형식이 아닙니다.";
     return;
   }
+
+  // 저장 시 유효성 검사
+
+  let isValid = true;
+
+  if (!nameRegExp.test(nameInput.value)) {
+    nameInput.nextElementSibling.textContent =
+      "이름 형식이 올바르지 않습니다. (한글 2~5자)";
+
+    isValid = false;
+  } else {
+    nameInput.nextElementSibling.textContent = "";
+  }
+
+  if (!emailRegExp.test(emailInput.value)) {
+    emailInput.nextElementSibling.textContent =
+      "이메일 형식이 올바르지 않습니다.";
+
+    isValid = false;
+  } else {
+    emailInput.nextElementSibling.textContent = "";
+  }
+
+  if (!phoneRegExp.test(phoneInput.value)) {
+    phoneInput.nextElementSibling.textContent =
+      "전화번호 형식이 올바르지 않습니다. (010-0000-0000)";
+
+    isValid = false;
+  } else {
+    phoneInput.nextElementSibling.textContent = "";
+  }
+
+  if (!isValid) {
+    return;
+  }
+
+  // 저장 완료
+
+  inputs.forEach(function (input) {
+    input.disabled = true;
+  });
+
+  editBtn.textContent = "수정하기";
+  isEdit = false;
 });

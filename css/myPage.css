@@ -52,29 +52,22 @@
 .info-row {
   display: flex;
   align-items: center;
+  position: relative;
+  margin-bottom: 30px;
 }
 
 /* 라벨 */
 .info-row label {
-  width: 120px;
-  font-size: 18px;
-  font-weight: bold;
+  width: 80px;
 }
 
 /* 입력창 */
+
+.edit-input,
 .info-row input {
-  flex: 1;
-
-  height: 42px;
-
-  padding: 0 12px;
-
-  font-size: 16px;
-
-  border: 1px solid #ccc;
-  border-radius: 6px;
-
-  outline: none;
+  width: 300px;
+  height: 35px;
+  box-sizing: border-box;
 }
 
 /* 수정 불가능할 때 */
@@ -136,6 +129,20 @@
 }
 
 .error {
+  position: absolute;
+  top: 45px;
+
+  /* input 가운데 기준 */
+  left: 80px;
+  width: 300px;
+
+  text-align: center;
+
   color: red;
   font-size: 13px;
+  height: 15px;
+}
+
+.error:empty {
+  visibility: hidden;
 }
