@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>마이페이지</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/myPage.css" />
+    <script src="../js/myPage.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <h1 class="logo">Book Mall</h1>
+      </a>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="../html/basket.html">장바구니</a></li>
+        <li><a href="../html/myPage.html">마이페이지</a></li>
+        <li><a class="nav-qna" href="./qna.html">Q&A</a></li>
+        <li id="bookRank">1위: 데미안</li>
+      </ul>
+    </nav>
+    <main class="mypage-container">
+      <h2>마이페이지</h2>
+
+      <section class="profile">
+        <div class="profile-image">
+          <img src="../img/profile.jpg" />
+        </div>
+
+        <div class="info">
+          <div class="info-row">
+            <label>이름</label>
+            <input type="text" class="edit-input" value="홍길동" disabled />
+            <small class="error"></small>
+          </div>
+
+          <div class="info-row">
+            <label>아이디</label>
+            <input type="text" value="gildong123" disabled />
+          </div>
+
+          <div class="info-row">
+            <label>이메일</label>
+            <input
+              type="email"
+              class="edit-input"
+              value="gildong@test.com"
+              disabled
+            />
+            <small class="error"></small>
+          </div>
+
+          <div class="info-row">
+            <label>전화번호</label>
+            <input
+              type="text"
+              class="edit-input"
+              value="010-1234-5678"
+              disabled
+            />
+            <small class="error"></small>
+          </div>
+
+          <div class="info-row">
+            <label>주소</label>
+            <input
+              type="text"
+              class="edit-input"
+              value="서울특별시 강남구"
+              disabled
+            />
+            <small class="error"></small>
+          </div>
+
+          <div class="info-row">
+            <label>가입일</label>
+            <input type="text" value="2026-06-01" disabled />
+          </div>
+        </div>
+      </section>
+
+      <div class="button-box">
+        <button id="editBtn">수정하기</button>
+      </div>
+    </main>
+
+    <footer>
+      <p class="footer-logo">Book Mall</p>
+      <p class="footer-desc">책을 고르는 조용한 방법</p>
+      <p class="footer-copyright">© 2026 Book Mall</p>
+    </footer>
+  </body>
+  <script src="../js/common.js"></script>
+</html>
