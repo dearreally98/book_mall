@@ -1,0 +1,40 @@
+/* main 영역 */
+
+.basket-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.basket-item {
+  display: flex;
+
+  min-height: 220px;
+
+  border: 2px solid #ddd;
+
+  margin-bottom: 35px;
+}
+
+.book-image {
+  width: 340px;
+
+  border-right: 2px solid #ddd;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 22px;
+  color: #888;
+}
+
+.book-info {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px;
+  gap: 15px;
+}
